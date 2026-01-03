@@ -1,6 +1,6 @@
 #!/bin/bash
-BEFORE="./"
-AFTER="./principles/principleName/" 
+BEFORE="./principles/abstractFactory/" 
+AFTER="./"
 
 SRC='src/'
 BEFORE="${BEFORE}${SRC}"

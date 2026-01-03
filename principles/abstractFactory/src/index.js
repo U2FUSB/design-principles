@@ -29,9 +29,6 @@ const maxTierSayName = (name) => () => {
 const maxTierTellCoins = (coins) => () => {
     console.log(`I have ${coins} coins available`);
 };
-const sayBowToMe = (name) => () => {
-    console.log("All must bow to me! The mighty " + name + "!!!");
-};
 
 function createFreeTierUser(name) {
     let coins = 0;
@@ -52,18 +49,19 @@ function createMaxTierUser(name) {
     return {
         sayName: maxTierSayName(name),
         tellCoins: maxTierTellCoins(coins),
-        bowToMe: sayBowToMe(name),
     };
 }
 const createUser = (user) => ({
-    ...user,
+    sayName: user.sayName,
+    tellCoins: user.tellCoins,
     sayHi: function () {
         console.log("Hi!");
     },
 });
 
 const createDifferentUser = (user) => ({
-    ...user,
+    sayName: user.sayName,
+    tellCoins: user.tellCoins,
     sayHi: function () {
         console.log("Hi! Im different");
     },
