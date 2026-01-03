@@ -1,5 +1,5 @@
 #!/bin/bash
-BEFORE="./principles/abstractFactory/" 
+BEFORE="./principles/factoryMethod/" 
 AFTER="./"
 
 SRC='src/'
