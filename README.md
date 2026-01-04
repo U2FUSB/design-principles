@@ -1,28 +1,34 @@
 Used for learning: https://www.dofactory.com/javascript/design-patterns/
+Implementations are functional. So no classes
 
-# Abstract Factory
+# abstractFactory
 
-## How to use it
+-   Similar kinds of objects need to be created dynamically (=usecase simple factory)
+-   Even though they are of the same kind, they can be categorised into different groups
+-   Every Group implements the same objects, but they maybe have a different behaviour
+-   These groups do not contain the objects themselfs, but rather factories to create said objects. Every factory is used to create one kind of object. (This is important to distuinguish from a factoryMethod)
+-   A central controller should take such kits as an argument and implement their methods (the factories) as a generic kit, which can then be used (=you want a kit of factories as resulting object)
 
-Call a factory (for example userCreator).
-As its argument, call another factory (for example proSubscriptionUserCreator)
+# factoryMethod
 
-> const bob = createUser(createProTierUser("Bob"));
+-   mostly the same as the abstract factory
+-   one difference is, that the kits don't contain other factories, but methods and properties directly
+-   the other difference is, that the central controller therefore does not create a generic kit using the factory method as an argument, but just an object build from its methods/properties (=you want a resulting object with simple methods/properties)
 
-## When to use
+# builder
 
--   Similar kinds of objects need to be created dynamically (=usecase factory)
--   Even though they are of the same kind, they can be categorised into groups which need to be implemented differently
+-   The methods on finished objects and during the building steps should differ.
+-   You need to create objects which have interdependent properties. Some properties cannot be set, if others were set before.
+-   You want to create objects which are differently complex during the creation and the usage phase.
 
-# Builder
+# prototype
 
-## How to use it
+Skipped.
+Just needed if you want to have every created object filled with default values.
+To me this seems to be more of a class-based issue
 
-Call the builder and chain-call its methods to incrementally build your object.
-Finally, call its build/make method to return the finished object
+# singleton
 
-## When to use
-
-The methods on finished objects and during the building steps should differ. 
-You need to create objects which have interdependent properties. Some properties cannot be set, if others were set before.
-You want to create objects which are differently complex during the creation and the usage phase.   
+-   not more then one instance of the desired object should exist at the same time.
+-   there is a need to create more then one instance but all are just virtual instances with reference to the single real one.
+-   the object should not exist by default, but only when created (so creation should only happen once - and done with intend, not automatically - during runtime)
