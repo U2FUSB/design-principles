@@ -1,6 +1,8 @@
 Used for learning: https://www.dofactory.com/javascript/design-patterns/
 Implementations are functional. So no classes
 
+All explanations are about possible usecases and maybe differences to other patterns if necessary. 
+
 # creational
 
 ## abstractFactory
@@ -42,3 +44,8 @@ To me this seems to be more of a class-based issue
 -   a new function/api/whatever should be used as replacement for another. The new uses a different interface.
 -   Neither the old nor the new should change their interface, but all existing functionality should keep working.
 -   You basically "can" refactor all identifiers in the existing code, but that's it.
+
+# bridge
+
+-   A component should be used with the same methods/api, even if it changes over time (drivers, libraries, etc)
+-   Different components should be used in the same way. Like they all would be the same generic API
