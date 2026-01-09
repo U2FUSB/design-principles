@@ -1,7 +1,7 @@
 Used for learning: https://www.dofactory.com/javascript/design-patterns/
 Implementations are functional. So no classes
 
-All explanations are about possible usecases and maybe differences to other patterns if necessary. 
+All explanations are about possible usecases and maybe differences to other patterns if necessary.
 
 # creational
 
@@ -45,7 +45,12 @@ To me this seems to be more of a class-based issue
 -   Neither the old nor the new should change their interface, but all existing functionality should keep working.
 -   You basically "can" refactor all identifiers in the existing code, but that's it.
 
-# bridge
+## bridge
 
 -   A component should be used with the same methods/api, even if it changes over time (drivers, libraries, etc)
 -   Different components should be used in the same way. Like they all would be the same generic API
+
+## composite
+
+-   A tree structure is needed. Could be a directory, a structure for some form of organized computation, elements on a page, whatever
+-   This can also be build as a "transparent" composite, in which all components are treated as a composite on its own.
