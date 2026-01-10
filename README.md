@@ -54,3 +54,4 @@ To me this seems to be more of a class-based issue
 
 -   A tree structure is needed. Could be a directory, a structure for some form of organized computation, elements on a page, whatever
 -   This can also be build as a "transparent" composite, in which all components are treated as a composite on its own.
+-   Especially useful if different object types are handled in a different way, but should be accessed using the same interface and/or in some way traversed.
