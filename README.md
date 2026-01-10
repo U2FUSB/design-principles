@@ -29,7 +29,7 @@ All explanations are about possible usecases and maybe differences to other patt
 
 Skipped.
 Just needed if you want to have every created object filled with default values.
-To me this seems to be more of a class-based issue
+To me this seems to be more of a class-based issue.
 
 ## singleton
 
@@ -55,3 +55,8 @@ To me this seems to be more of a class-based issue
 -   A tree structure is needed. Could be a directory, a structure for some form of organized computation, elements on a page, whatever
 -   This can also be build as a "transparent" composite, in which all components are treated as a composite on its own.
 -   Especially useful if different object types are handled in a different way, but should be accessed using the same interface and/or in some way traversed.
+
+## decorator
+
+-   extending an existing component with additional functionality, without changing the component itself.
+-   using Object.assign to an object with a new property/method whould be the object-based way to do this
