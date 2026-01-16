@@ -60,3 +60,9 @@ To me this seems to be more of a class-based issue.
 
 -   extending an existing component with additional functionality, without changing the component itself.
 -   using Object.assign to an object with a new property/method whould be the object-based way to do this
+
+## facade
+
+- whenever components you dont want to touch need a simplified interface
+- especially if they interact with each other
+- For example the fetch api working together with some other api. This can be abstracted into a facade which only handles their use cases.
