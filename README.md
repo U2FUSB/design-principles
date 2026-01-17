@@ -63,6 +63,12 @@ To me this seems to be more of a class-based issue.
 
 ## facade
 
-- whenever components you dont want to touch need a simplified interface
-- especially if they interact with each other
-- For example the fetch api working together with some other api. This can be abstracted into a facade which only handles their use cases.
+-   whenever components you dont want to touch need a simplified interface
+-   especially if they interact with each other
+-   For example the fetch api working together with some other api. This can be abstracted into a facade which only handles their use cases.
+
+## flyweight
+
+-   As far, I can see only 2 useful scenarios:
+-   first, when vast amounts of objects are created and it restricts memory. However, it also reduces uniqueness of the created objects.
+-   second, when you have a randomly created set of objects and don't want to (or cant) have more of them, then the count of every unique combination of their properties/methods
