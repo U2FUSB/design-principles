@@ -79,3 +79,9 @@ To me this seems to be more of a class-based issue.
 - For example to translate all deletion requests into saving them to a backup component
 - Or to cache results
 - or to rate limit usages by user
+
+## chain of responsibility
+
+- taking cash from an atm, handling password validation incrementally, etc.
+- can be used when one or more components process an object, where the order of these components, if they are used or not and their amount should be independent.
+- seems similar to the builder pattern, but instead of building a component, data gets processed.
