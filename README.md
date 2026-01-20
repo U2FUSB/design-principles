@@ -85,3 +85,11 @@ To me this seems to be more of a class-based issue.
 - taking cash from an atm, handling password validation incrementally, etc.
 - can be used when one or more components process an object, where the order of these components, if they are used or not and their amount should be independent.
 - seems similar to the builder pattern, but instead of building a component, data gets processed.
+
+## command
+
+- allows to tread commands like data.
+- Maybe for safety checks on commands.
+- Also to allow sending them in bulk to - for example - a proxy.
+- Of course everything which needs to implement undo/redo operations on commands
+
