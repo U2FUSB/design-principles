@@ -100,4 +100,9 @@ But I use one from [here](https://medium.com/@artemkhrenov/the-interpreter-patte
 
 ## iterator
 
-allows to create iteration methods for a collection. Thats it. 
+allows to create iteration methods for a collection. Thats it.
+
+## mediator
+
+- messaging board, separate communication channels, sending commands to one or all receivers, etc.
+- basically everywhere usable where one component sends communication or data through a central hub to other components.
