@@ -95,6 +95,9 @@ To me this seems to be more of a class-based issue.
 
 ## interpreter
 
-skipped. Could not think up a usecase which isn't very complex and not a calculator. 
-But I use one from [here](https://medium.com/@artemkhrenov/the-interpreter-pattern-in-javascript-41493e1ad06b) in the examples, for completenes 
+skipped. Could not think up a usecase which isn't very complex and not a calculator.
+But I use one from [here](https://medium.com/@artemkhrenov/the-interpreter-pattern-in-javascript-41493e1ad06b) in the examples, for completenes
 
+## iterator
+
+allows to create iteration methods for a collection. Thats it. 
