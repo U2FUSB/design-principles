@@ -110,3 +110,7 @@ allows to create iteration methods for a collection. Thats it.
 ## memento
 
 - if I need to save the state of objects for later restore
+
+## observer
+
+- for event based communication. Can allow loose coupling between modules.  
