@@ -131,3 +131,8 @@ allows to create iteration methods for a collection. Thats it.
 - When you know the order/steps of a process, but the exact implementation of these steps can differ bey context
 - hooks should be a common example
 - basically when you need "templates" of process implementations, where the order in the process of things itself stays the same
+
+## visitor
+
+- allows to setup/configure objects after their creation unsing other objects (=visitors).
+- similarity to the builder, but post-creation focus. 

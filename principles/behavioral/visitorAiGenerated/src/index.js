@@ -1,17 +1,21 @@
 import "./style.css";
-// Different elements
+
+// added this, since I was to lazy to implement it like this, but liked this version.
+
 const ChocolateCake = () => ({
-    type: 'Chocolate Cake',
-    accept(visitor) { visitor.visitChocolate(this); }
+    type: "Chocolate Cake",
+    accept(visitor) {
+        visitor.visitChocolate(this);
+    },
 });
 
 const GlazedDonut = () => ({
-    type: 'Glazed Donut',
-    accept(visitor) { visitor.visitDonut(this); }
+    type: "Glazed Donut",
+    accept(visitor) {
+        visitor.visitDonut(this);
+    },
 });
 
-// The Visitor adds a NEW operation (Price Calculation) 
-// without modifying the cake or donut code.
 const PriceVisitor = {
     visitChocolate(cake) {
         this.total = 15;
@@ -20,8 +24,8 @@ const PriceVisitor = {
     visitDonut(donut) {
         this.total = 2;
         console.log(`${donut.type} costs $${this.total}`);
-    }
+    },
 };
 
 const items = [ChocolateCake(), GlazedDonut()];
-items.forEach(item => item.accept(PriceVisitor));
+items.forEach((item) => item.accept(PriceVisitor));
