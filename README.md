@@ -125,3 +125,9 @@ allows to create iteration methods for a collection. Thats it.
 - Basically everywhere one wants to switch different components for the same purpose around
 - For example when one wants to choose an fitting algorith for a task, based on conditions of the environment
 - or to choose between designs/themes, based on user input
+
+## template method
+
+- When you know the order/steps of a process, but the exact implementation of these steps can differ bey context
+- hooks should be a common example
+- basically when you need "templates" of process implementations, where the order in the process of things itself stays the same
