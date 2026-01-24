@@ -119,3 +119,9 @@ allows to create iteration methods for a collection. Thats it.
 
 - stuff like vending machines, state-based games, website forms, etc.
 - Basically Everything that has different states, and needs a maintainable way to transition between them
+
+## strategy
+
+- Basically everywhere one wants to switch different components for the same purpose around
+- For example when one wants to choose an fitting algorith for a task, based on conditions of the environment
+- or to choose between designs/themes, based on user input
