@@ -113,4 +113,9 @@ allows to create iteration methods for a collection. Thats it.
 
 ## observer
 
-- for event based communication. Can allow loose coupling between modules.  
+- for event based communication. Can allow loose coupling between modules.
+
+## state
+
+- stuff like vending machines, state-based games, website forms, etc.
+- Basically Everything that has different states, and needs a maintainable way to transition between them
